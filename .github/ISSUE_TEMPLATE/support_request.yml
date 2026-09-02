@@ -1,0 +1,49 @@
+name: 🙋 Support Request
+description: Ask for help with a ZeroG Network service, server, or project
+title: "[Support]: "
+labels: ["support"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out. Please describe your issue so we can help as quickly as possible.
+        If your issue is specific to a particular project (e.g. NeoEssentials), consider opening it in that project's repo instead so it reaches the right maintainers directly.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: What is this about?
+      options:
+        - Minecraft server / gameplay
+        - NeoEssentials Dashboard
+        - StellarServerForge
+        - Account / access
+        - Website / forums
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What do you need help with?
+      description: Describe your issue or question in detail.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: What have you already tried?
+      description: Any troubleshooting steps you've already taken.
+    validations:
+      required: false
+
+  - type: input
+    id: contact
+    attributes:
+      label: In-game name / account (if relevant)
+      placeholder: e.g. your Minecraft username
+    validations:
+      required: false
